@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9072867538181588"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Is Wealth</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5fff7;
+            color: #344b3b;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #087f45, #38b96b);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #075d36;
+            padding: 15px 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #ffe98a;
+        }
+
+        .hero {
+            background: linear-gradient(#0005, #0005),
+            url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1400");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 110px 20px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f5c842;
+            color: #174a2d;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 55px 7%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #087f45;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px #00000015;
+            padding-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #087f45;
+            margin: 15px 10px 5px;
+        }
+
+        .card p {
+            padding: 0 15px;
+        }
+
+        .article {
+            max-width: 900px;
+            margin: 25px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px #00000010;
+            text-align: left;
+        }
+
+        .article h3 {
+            color: #087f45;
+            margin: 15px 0 8px;
+        }
+
+        .article ul {
+            padding-left: 25px;
+        }
+
+        .article img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 15px 0;
+        }
+
+        .tip {
+            background: #e0f5e6;
+            padding: 18px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        /* Rose Face Mask & Crowd-Favorite Tips Toggle Styles */
+        .rose-btn {
+            background: #d81b60;
+            color: #ffffff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .rose-btn:hover {
+            background: #ad1457;
+        }
+
+        #roseMaskTips {
+            display: none;
+            margin-top: 20px;
+            padding: 22px;
+            background: #fff5f8;
+            border: 1px solid #f8bbd0;
+            border-radius: 12px;
+        }
+
+        #roseMaskTips img {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        #roseMaskTips h4 {
+            color: #c2185b;
+            margin: 14px 0 6px;
+            font-size: 18px;
+        }
+
+        /* Malai Box Styling inside Skin Care */
+        .malai-box {
+            background: #fffaf5;
+            border-left: 4px solid #e09f5a;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .malai-box h3 {
+            color: #8c5219;
+            margin-top: 0;
+        }
+
+        .malai-box h4 {
+            color: #8c5219;
+            margin: 14px 0 6px;
+            font-size: 17px;
+        }
+
+        .ad-box {
+            background: #edf5ed;
+            border: 1px dashed #82a88b;
+            padding: 20px;
+            margin: 25px auto;
+            max-width: 800px;
+            color: #67806c;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .winter-section {
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #e0f7fa, #fff0f5);
+            text-align: center;
+            border-radius: 15px;
+            margin: 25px auto;
+            max-width: 1100px;
+        }
+
+        .winter-section h2 {
+            color: #087e8b;
+            font-size: 30px;
+        }
+
+        .winter-intro {
+            color: #555;
+            font-size: 18px;
+        }
+
+        .winter-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .winter-card {
+            background: white;
+            width: 260px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            text-align: left;
+        }
+
+        .winter-card h3 {
+            color: #e47b91;
+            text-align: center;
+        }
+
+        .winter-card ul {
+            line-height: 2;
+            color: #444;
+        }
+
+        .winter-footer {
+            color: #087e8b;
+            margin-top: 30px;
+        }
+
+        .contact {
+            background: #e5f6e9;
+        }
+
+        .contact a {
+            color: #087f45;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #075d36;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            .hero h2 {
+                font-size: 29px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            section {
+                padding: 40px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>🌿 Health Is Wealth 🌿</h1>
+    <p>Your Health, Your Happiness!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#food">Healthy Food</a>
+    <a href="#lassi">Lassi Recipe</a>
+    <a href="#fitness">Fitness</a>
+    <a href="#skin">Skin Care</a>
+    <a href="#methi">Methi</a>
+    <a href="#eye-care">Eye Care</a>
+    <a href="#winter">Winter Tips</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Healthy Life, Happy Life!</h2>
+    <p>Discover healthy food, beauty care and happy living.</p>
+    <a href="#food" class="btn">Explore More</a>
+</div>
+
+<section id="about">
+    <h2>💚 About Health Is Wealth</h2>
+    <p>
+        Health is one of the greatest blessings in life.
+        Good food, enough sleep, daily activity and positive
+        habits support a healthy lifestyle.
+    </p>
+</section>
+
+<div class="ad-box">
+    <span>Advertisement</span>
+    <script>
+      atOptions = {
+        'key' : '34c1830c96a47a072746d865e9e46b4b',
+        'format' : 'iframe',
+        'height' : 300,
+        'width' : 160,
+        'params' : {}
+      };
+    </script>
+    <script src="https://bicea.org/22/34c1830c96a47a072746d865e9e46b4b"></script>
+</div>
+
+<section id="food">
+    <h2>🥗 Healthy Food</h2>
+    <p>Enjoy fresh and nutritious foods every day.</p>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800" alt="Fresh vegetables">
+            <h3>🥬 Fresh Vegetables</h3>
+            <p>Vegetables provide important vitamins and fiber.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=800" alt="Fresh fruits">
+            <h3>🍎 Fresh Fruits</h3>
+            <p>Fruits are a delicious source of nutrients.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800" alt="Healthy meals">
+            <h3>🥗 Healthy Meals</h3>
+            <p>Enjoy balanced and varied meals.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800" alt="Milk and dairy">
+            <h3>🥛 Milk & Dairy</h3>
+            <p>Milk and yogurt provide calcium and protein.</p>
+        </div>
+    </div>
+</section>
+
+<section id="lassi">
+    <h2>🥛 Homemade Milk & Yogurt Lassi</h2>
+    <p>A refreshing traditional Pakistani drink!</p>
+
+    <div class="article">
+        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=1000" alt="Refreshing yogurt drink">
+
+        <h3>🌸 How to Make Lassi</h3>
+        <p>Milk and yogurt can be combined to make a delicious homemade lassi.</p>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li>1 cup plain yogurt</li>
+            <li>1/2 cup milk</li>
+            <li>Some cold water</li>
+            <li>Optional: a little sugar</li>
+        </ul>
+
+        <h3>Preparation</h3>
+        <p>
+            Add yogurt and milk to a blender.
+            Add a little cold water and blend until smooth and creamy.
+        </p>
+
+        <h3>Health Benefits</h3>
+        <p>
+            Yogurt and milk provide calcium and protein.
+            Calcium supports healthy bones and teeth.
+        </p>
+
+        <div class="tip">
+            <strong>Healthy Tip 💚</strong>
+            <p>Enjoy homemade lassi as part of a balanced diet.
+            Use less added sugar for an everyday drink.</p>
+        </div>
+    </div>
+</section>
+
+<section id="fitness">
+    <h2>🏃 Fitness & Exercise</h2>
+    <p>Enjoy activities that support your wellbeing.</p>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800" alt="Walking">
+            <h3>🚶 Walking</h3>
+            <p>Enjoy a refreshing walk.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800" alt="Yoga">
+            <h3>🧘 Yoga & Relaxation</h3>
+            <p>Take time to relax and feel refreshed.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skin">
+    <h2>🌸 Natural Skin Care Tips</h2>
+
+    <div class="article">
+        <h3>🌹 Rose Face Mask & Popular Skin Care Tips</h3>
+        <p>Click the button below to open rose face mask recipes and popular everyday skin care tips.</p>
+        <button type="button" class="rose-btn" id="roseBtn" onclick="toggleRoseMask()">Skin Care</button>
+
+        <div id="roseMaskTips">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv-IeMfjU-vVIagzhb5Mr9PIvG_yNsDuqc7R2_crEktQ&s" alt="Rose Face Mask">
+
+            <h4>1. Quick Rose & Honey Glow Mask</h4>
+            <p><strong>Ingredients:</strong> 1 tbsp pure rosewater (or 1 tsp rose petal powder) + 1 tsp raw honey.<br>
+            <strong>How to use:</strong> Mix and apply for 10–15 minutes, then rinse with lukewarm water for soft, hydrated skin.</p>
+
+            <h4>2. Classic Rose & Yogurt Glow Mask</h4>
+            <p><strong>Ingredients:</strong> 2 tbsp crushed rose petals (or 1 tbsp rose powder), 1 tbsp plain yogurt, 1 tsp raw honey.<br>
+            <strong>How to use:</strong> Apply an even layer to clean skin for 15 minutes, then rinse gently with lukewarm water.</p>
+
+            <h4>3. Rosewater, Sandalwood & Besan Pack</h4>
+            <p><strong>Ingredients:</strong> 1 tbsp besan (gram flour), ½ tbsp sandalwood powder, a pinch of wild turmeric, 1–2 tbsp pure rosewater.<br>
+            <strong>How to use:</strong> Leave on for 10–12 minutes until semi-dry, then rinse off with cool water.</p>
+
+            <h4>4. Instant Rose & Aloe Hydrating Gel</h4>
+            <p><strong>Ingredients:</strong> 1 tbsp pure aloe vera gel, 1 tbsp rosewater, ½ tsp vegetable glycerin (optional).<br>
+            <strong>How to use:</strong> Apply a thick layer for 15–20 minutes, then rinse with cool water before moisturizing.</p>
+
+            <h4>⭐ Popular Everyday Tips People Love</h4>
+            <ul>
+                <li><strong>Chilled Rosewater Ice Cubes:</strong> Freeze pure rosewater in an ice tray and gently rub a cube wrapped in a soft cloth over tired or warm skin for instant freshness.</li>
+                <li><strong>Simple 3-Step Night Routine:</strong> Wash your face gently, apply a light moisturizer, and use lip balm before bed instead of complicated steps.</li>
+                <li><strong>Water & Sunscreen Daily:</strong> Drink enough water throughout the day and wear sunscreen outdoors to support natural radiance.</li>
+            </ul>
+
+            <div class="tip">
+                <strong>💡 Important Reminder</strong>
+                <p>Always do a quick patch test on your jawline or inner wrist 24 hours before applying any homemade mask to your full face.</p>
+            </div>
+        </div>
+
+        <!-- Milk Malai Moisture Tip Section -->
+        <div class="malai-box">
+            <h3>🥛 Milk Malai for Skin Moisture</h3>
+            <p>
+                Yes, milk malai (fresh cream) helps moisturize the skin because it contains natural fats and soothing dairy compounds that leave dry or rough skin feeling softer and temporarily more hydrated.
+            </p>
+
+            <h4>How to Use Milk Malai</h4>
+            <ul>
+                <li><strong>How much:</strong> Take a small amount of fresh malai (about ½ to 1 teaspoon).</li>
+                <li><strong>How to apply:</strong> Smooth it onto clean skin, leave it on for <strong>10–15 minutes</strong>, and rinse off gently with lukewarm or cool water.</li>
+                <li><strong>Benefit:</strong> Helps soften dry patches and add a smooth feel.</li>
+            </ul>
+
+            <h4>A Few Things to Keep in Mind</h4>
+            <ul>
+                <li><strong>Oily or acne-prone skin:</strong> Heavy cream can clog pores or trigger breakouts on skin that is already oily or prone to acne. If your skin leans oily, skip heavy layers or try a lighter option like rosewater, plain yogurt, or a non-comedogenic moisturizer.</li>
+                <li><strong>Use it fresh:</strong> Always use fresh malai rather than old or sour dairy, which can irritate the skin.</li>
+                <li><strong>Patch test first:</strong> Test a small dab along your jawline or inner wrist before applying it all over your face to make sure it doesn't cause irritation or bumps.</li>
+            </ul>
+        </div>
+
+        <hr style="margin: 25px 0; border: none; border-top: 1px solid #eee;">
+
+        <h3>My Personal Homemade Skin Care Experience</h3>
+
+        <img src="https://images.pexels.com/photos/1327734/pexels-photo-1327734.jpeg" alt="Melon seeds and fresh melon">
+
+        <h3>🍈 Melon Seeds & Melon Pulp</h3>
+        <p>Today I am sharing my personal homemade skin care experience.</p>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li>🌿 Fresh melon seeds</li>
+            <li>🍈 Fresh melon pulp</li>
+        </ul>
+
+        <h3>My Personal Experience</h3>
+        <p>
+            I tried melon seeds and fresh melon pulp
+            as a homemade skin care tip.
+        </p>
+
+        <h3>Skin Care Information</h3>
+        <p>
+            Melon pulp contains water and may help skin
+            feel fresh and hydrated. It is not scientifically
+            proven to make skin permanently white.
+        </p>
+
+        <div class="tip">
+            <strong>Important</strong>
+            <p>Homemade mixtures can irritate skin.
+            Avoid using mixtures that cause irritation.
+            Gentle skin care and sun protection are important.</p>
+        </div>
+    </div>
+</section>
+
+<section id="lifestyle">
+    <h2>💚 Healthy Lifestyle</h2>
+    <p>
+        Sleep well, drink enough water, enjoy healthy meals
+        and make time for activities you love.
+    </p>
+</section>
+
+<section id="face-mask">
+    <h2>🌿 Turmeric, Milk & Cream Face Mask</h2>
+
+    <div class="article">
+        <img src="https://images.openai.com/static-rsc-4/WOi3DjFjyChZJm3HjZV5UIWTBOIU9C61gx09QrwwxsmIuJ-YHRU3BQNdLaR1eq5msLhuKfeXGWPraOABjsCXaD8d7kscjPtyLG8807o5IXnDJwXnGrWC-IB5bbBeQr0lqV292RbDcnwq4JNQcJhPtKCYBdRzl2yiG4v3oCIJpwrvAXxift_HBVOwO5l0OuCO?purpose=fullsize" alt="Turmeric skincare">
+
+        <p>
+            Turmeric, milk, and cream are commonly used
+            in traditional skincare routines.
+        </p>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li>1 teaspoon turmeric powder</li>
+            <li>2 teaspoons milk</li>
+            <li>1 teaspoon fresh cream</li>
+        </ul>
+
+        <h3>Traditional Preparation</h3>
+        <p>
+            These ingredients are traditionally mixed
+            to make a homemade skincare paste.
+        </p>
+
+        <h3>Skin Care Information</h3>
+        <ul>
+            <li>Milk and cream contain moisturizing fats.</li>
+            <li>Turmeric is traditionally used in skincare.</li>
+            <li>There is limited scientific evidence for the benefits of this mixture.</li>
+        </ul>
+
+        <div class="tip">
+            <strong>Important Note</strong>
+            <p>
+                This mixture does not whiten skin or change
+                natural skin color. Homemade mixtures may
+                cause irritation or allergies. Avoid applying
+                irritating mixtures to your face.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="methi">
+    <h2>🌿 Benefits of Fenugreek Leaves</h2>
+    <p>Fresh Fenugreek Leaves and Their Benefits</p>
+
+    <div class="article">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUyBZp7A9HjT6bVZiORtXVvmNASX4IK3tyGOBPrKVHrw&s=10" alt="Fresh Methi">
+
+        <p>
+            Fenugreek leaves, also known as Methi,
+            are nutritious green leaves with many health benefits.
+        </p>
+
+        <h3>🌱 Health Benefits of Methi</h3>
+
+        <h3>1. Improves Digestion</h3>
+        <p>Fenugreek leaves contain dietary fiber that supports healthy digestion.</p>
+
+        <h3>2. Supports Blood Sugar</h3>
+        <p>The fiber in fenugreek may help slow down sugar absorption.</p>
+
+        <h3>3. Supports Heart Health</h3>
+        <p>Fenugreek leaves provide fiber that contributes to a heart-healthy diet.</p>
+
+        <h3>4. Supports Strong Bones</h3>
+        <p>They contain vitamin K, which helps maintain healthy bones.</p>
+
+        <h3>5. Provides Iron</h3>
+        <p>They contain iron, which helps the body make red blood cells.</p>
+
+        <h3>6. Provides Antioxidants</h3>
+        <p>They contain antioxidants that help protect the body's cells.</p>
+
+        <h3>🍲 How to Eat Fenugreek Leaves</h3>
+
+        <ul>
+            <li>🥘 Potato Methi Curry</li>
+            <li>🫓 Methi Paratha</li>
+            <li>🥣 Methi Dal</li>
+            <li>🥗 Healthy Vegetable Meals</li>
+        </ul>
+
+        <div class="tip">
+            <strong>⚠️ Important Note</strong>
+            <p>
+                Enjoy fenugreek leaves as part of a balanced diet.
+                If you take diabetes medication, ask a healthcare
+                professional before using concentrated fenugreek supplements.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="ad-box">
+    <span>Advertisement</span>
+    <script>
+      atOptions = {
+        'key' : '34c1830c96a47a072746d865e9e46b4b',
+        'format' : 'iframe',
+        'height' : 300,
+        'width' : 160,
+        'params' : {}
+      };
+    </script>
+    <script src="https://bicea.org/22/34c1830c96a47a072746d865e9e46b4b"></script>
+</div>
+
+<section id="eye-care">
+    <h2>👁️ Eye Care Tips</h2>
+    <p>Simple Ways to Care for Your Eyes While Using Mobile & Laptop Screens.</p>
+
+    <div class="article">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000" alt="Person using a laptop">
+
+        <h3>💚 Protect Your Eyes from Screens</h3>
+
+        <p>
+            Mobile phones and laptops are part of our daily lives.
+            Taking regular breaks and following healthy screen habits
+            can help reduce eye strain.
+        </p>
+
+        <h3>🌿 1. Follow the 20-20-20 Rule</h3>
+        <p>
+            Every 20 minutes, look at something about 20 feet away
+            for at least 20 seconds.
+        </p>
+
+        <h3>💧 2. Blink Your Eyes</h3>
+        <p>
+            Remember to blink regularly while using screens.
+            This helps keep your eyes comfortable.
+        </p>
+
+        <h3>💡 3. Adjust Screen Brightness</h3>
+        <p>
+            Keep your screen brightness comfortable.
+            Avoid using very bright screens in dark rooms.
+        </p>
+
+        <h3>📱 4. Keep a Comfortable Distance</h3>
+        <p>
+            Keep your mobile and laptop at a comfortable viewing distance.
+            Avoid holding your phone too close to your face.
+        </p>
+
+        <h3>🌞 5. Take Regular Breaks</h3>
+        <p>
+            Take short breaks during long screen sessions.
+            Stand up, move around and give your eyes a rest.
+        </p>
+
+        <h3>💻 6. Adjust Text Size</h3>
+        <p>
+            Increase text size if you need to squint or lean forward
+            to read your screen.
+        </p>
+
+        <h3>😴 7. Get Enough Sleep</h3>
+        <p>
+            Maintain a regular sleep routine to support your
+            overall eye health and wellbeing.
+        </p>
+
+        <div class="tip">
+            <strong>💚 Healthy Eye Care Reminder</strong>
+            <p>
+                Give your eyes regular breaks, blink often and keep
+                your screen at a comfortable distance.
+            </p>
+        </div>
+
+        <h3>⚠️ Important</h3>
+        <p>
+            If you experience persistent eye pain, blurred vision
+            or frequent headaches, consult an eye care professional.
+        </p>
+    </div>
+</section>
+
+<!-- Winter Tips Section -->
+<section id="winter" class="winter-section">
+    <h2>❄️ Winter Health & Care Tips ❄️</h2>
+    <p class="winter-intro">
+        Stay Warm, Stay Healthy, Stay Happy!
+    </p>
+
+    <div class="winter-container">
+        <div class="winter-card">
+            <h3>🥗 Winter Health Tips</h3>
+            <ul>
+                <li>Drink warm water regularly.</li>
+                <li>Eat fresh seasonal fruits.</li>
+                <li>Eat healthy vegetables and soups.</li>
+                <li>Get enough sleep.</li>
+                <li>Stay physically active.</li>
+            </ul>
+        </div>
+
+        <div class="winter-card">
+            <h3>🌸 Winter Skin Care</h3>
+            <ul>
+                <li>Apply moisturizer daily.</li>
+                <li>Use lip balm.</li>
+                <li>Avoid very hot showers.</li>
+                <li>Keep your skin clean.</li>
+                <li>Protect skin from cold winds.</li>
+            </ul>
+        </div>
+
+        <div class="winter-card">
+            <h3>💆 Winter Hair Care</h3>
+            <ul>
+                <li>Oil your hair when needed.</li>
+                <li>Use gentle shampoo.</li>
+                <li>Avoid very hot water.</li>
+                <li>Protect hair from cold weather.</li>
+            </ul>
+        </div>
+
+        <div class="winter-card">
+            <h3>🍊 Healthy Winter Foods</h3>
+            <ul>
+                <li>Oranges and apples.</li>
+                <li>Carrots and spinach.</li>
+                <li>Dates and nuts.</li>
+                <li>Homemade vegetable soup.</li>
+            </ul>
+        </div>
+
+        <div class="winter-card">
+            <h3>🧣 Winter Safety Tips</h3>
+            <ul>
+                <li>Wear warm clothes.</li>
+                <li>Keep hands and feet warm.</li>
+                <li>Wash your hands regularly.</li>
+                <li>Keep your room comfortably warm.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="winter-footer">
+        💚 Stay Warm, Stay Healthy, Stay Happy! 💚
+    </h3>
+</section>
+
+<section id="contact" class="contact">
+    <h2>📩 Contact Us</h2>
+
+    <h3>Welcome to Health Is Wealth!</h3>
+
+    <p style="font-size: 18px; margin: 15px 0;">
+        Email: <strong style="color: #087f45;">bushragraphicbushra@gmail.com</strong>
+    </p>
+
+    <a class="btn" target="_blank"
+       href="https://mail.google.com/mail/?view=cm&fs=1&to=bushragraphicbushra@gmail.com&su=Health%20Is%20Wealth%20Inquiry">
+        Send Email via Gmail
+    </a>
+
+    <button type="button" class="btn" style="margin-left: 10px;"
+            onclick="navigator.clipboard.writeText('bushragraphicbushra@gmail.com'); alert('Email copied: bushragraphicbushra@gmail.com');">
+        Copy Email
+    </button>
+</section>
+
+<footer>
+    <p>© 2026 Health Is Wealth | All Rights Reserved</p>
+    <p>Designed with Love 🌿</p>
+    <p>Stay Healthy, Stay Happy!</p>
+</footer>
+
+<script>
+    function toggleRoseMask() {
+        const box = document.getElementById("roseMaskTips");
+        const btn = document.getElementById("roseBtn");
+
+        if (box.style.display === "none" || box.style.display === "") {
+            box.style.display = "block";
+            btn.textContent = "Hide Skin Care Tips";
+        } else {
+            box.style.display = "none";
+            btn.textContent = "Skin Care";
+        }
+    }
+</script>
+
+</body>
+</html>
